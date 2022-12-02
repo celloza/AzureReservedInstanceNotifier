@@ -1,0 +1,11 @@
+{
+    
+    // Set Action to audit
+    "action": "audit",
+    // Return all reservations, regardless of status
+    "activeOnly": false,    
+    // Set the context (this will be included in the output email)
+    "identifier": "My company name",    
+    // Semi-colon separated list of email addresses to send email to
+    "emailResultsTo": "test@zero.co.zip"
+}

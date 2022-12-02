@@ -1,0 +1,16 @@
+{
+    // Set Action to monitor
+    "action": "monitor",
+    // Set the context (this will be included in the output email)
+    "identifier": "My company name",
+    // Semi-colon separated list of email addresses to send email to
+    "emailResultsTo": "test@zero.co.zip",
+    // Only include a reservation if Days To Expire >= 30 (range 1)
+    "range1min": 30,
+    // Only include a reservation if Days To Expire < 37 (range 1)
+    "range1max": 37,
+    // Only include a reservation if Days To Expire >= 60 (range 2)
+    "range2min": 60,
+    // Only include a reservation if Days To Expire < 67 (range 2)
+    "range2max": 67
+}

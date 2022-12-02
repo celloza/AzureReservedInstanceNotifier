@@ -1,0 +1,996 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Add_EmailBody_HTML_Content": {
+                "inputs": {
+                    "name": "EmailBody",
+                    "value": "<body class=\"power-automate ltr\" dir=\"ltr\" style='width: 100%;min-width: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;padding: 0;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <div class=\"preheader\" style=\"display: none;visibility: hidden;opacity: 0;color: #f4f4f4;height: 0;width: 0;line-height: 1px;font-size: 1px;max-height: 0;max-width: 0;overflow: hidden;mso-hide: all\"> Reserved Instance Notifier </div><table role=\"presentation\" class=\"body\" data-made-with-foundation=\"data-made-with-foundation\" style='border-spacing: 0;border-collapse: collapse;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;background: #ffffff;height: 100%;width: 100%;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <td class=\"float-center\" align=\"center\" valign=\"top\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;font-size: 14px;line-height: 20px;Margin: 0 auto;float: none;text-align: center'> <center class=\"main-container\" style=\"width: 100%;min-width: 640px\"> <table role=\"presentation\" bgcolor=\"#ffffff\" align=\"center\" class=\"float-center\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;Margin: 0 auto;float: none;text-align: center\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <td style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <table role=\"presentation\" dir=\"ltr\" align=\"center\" class=\"container header-container section\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;background: #ffffff;width: 640px;Margin: 0 auto;text-align: inherit\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <td style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <table role=\"presentation\" class=\"wrapper outer-wrapper\" align=\"center\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <td class=\"wrapper-inner\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-right: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;padding-top: 0;mso-padding-top-alt: 0;padding-bottom: 0;mso-padding-bottom-alt: 0'> <table role=\"presentation\" class=\"row header-section\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding: 0;width: 100%;position: relative;display: table\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <th class=\"small-12 large-12 columns first last\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;text-align: left;font-size: 14px;line-height: 20px;Margin: 0 auto;width: 616px;padding-left: 24px;padding-right: 24px;padding-top: 24px;mso-padding-top-alt: 24px;padding-bottom: 24px;mso-padding-bottom-alt: 24px'> <table role=\"presentation\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <th style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <table role=\"presentation\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <th align=\"left\" class=\"header-left-column\" valign=\"middle\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> </th> <th align=\"right\" class=\"header-right-column\" valign=\"middle\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: right;line-height: 1;mso-line-height: 1;Margin-bottom: 0;mso-margin-bottom-alt: 0;font-size: 18px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600;color: #0066ff'> Reserved Instance Notifier </th> </tr></tbody> </table> </th> <th class=\"expander\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;visibility: hidden;width: 0;padding: 0'></th> </tr></tbody> </table> </th> </tr></tbody> </table> </td></tr></tbody> </table> </td></tr></tbody> </table> <table role=\"presentation\" align=\"center\" class=\"container template-container section\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;background: #ffffff;width: 640px;Margin: 0 auto;text-align: inherit\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <td style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <table role=\"presentation\" class=\"wrapper outer-wrapper\" align=\"center\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <td class=\"wrapper-inner\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-right: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;padding-bottom: 12px;mso-padding-bottom-alt: 12px;padding-top: 6px;mso-padding-top-alt: 6px'> <center style=\"width: 100%;min-width: 640px\"> <table role=\"presentation\" align=\"center\" class=\"row float-center\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding: 0;width: 100%;position: relative;Margin: 0 auto;float: none;text-align: center;display: table\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <th class=\"small-12 large-12 columns first last\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;text-align: left;font-size: 14px;line-height: 20px;Margin: 0 auto;width: 616px;padding-bottom: 12px;mso-padding-bottom-alt: 12px;padding-left: 24px;padding-right: 24px;padding-top: 6px;mso-padding-top-alt: 6px'> <table role=\"presentation\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <th style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <h1 style='padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;color: inherit;Margin-bottom: 16px;-webkit-hyphens: none;-moz-hyphens: none;-ms-hyphens: none;hyphens: none;letter-spacing: -.01em;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600;font-size: 28px;line-height: 36px;mso-line-height-alt: 36px;word-wrap: normal;-webkit-text-size-adjust: none'> <img height=\"20\" width=\"20\" src=\"https://images.ecomm.microsoft.com/cdn/mediahandler/azure-emails-templates/production/shared/images/templates/shared/images/icons/status-alert.png\" alt=\"\" class=\"h1-alert-icon status-alert\" role=\"presentation\" style=\"outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;max-width: 100%;clear: both;display: inline-block;height: 20px;width: 20px\"/><!--[if mso]> &#8288;<![endif]--> @@Title@@ </h1> <p style='color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 16px;line-height: 22px;mso-line-height-alt: 22px;word-wrap: normal;-webkit-text-size-adjust: none;Margin-bottom: 0;mso-margin-bottom-alt: 0'> @@SubTitle@@ </p></th> <th class=\"expander\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;visibility: hidden;width: 0;padding: 0'></th> </tr></tbody> </table> </th> </tr></tbody> </table> @@ReservationOrders@@ <table role=\"presentation\" align=\"center\" class=\"row float-center\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding: 0;width: 100%;position: relative;Margin: 0 auto;float: none;text-align: center;display: table\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <th class=\"small-12 large-12 columns first last\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;text-align: left;font-size: 14px;line-height: 20px;Margin: 0 auto;width: 616px;padding-top: 12px;mso-padding-top-alt: 12px;padding-bottom: 12px;mso-padding-bottom-alt: 12px;padding-left: 24px;padding-right: 24px'> <table role=\"presentation\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <th style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <p style='color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 16px;line-height: 22px;mso-line-height-alt: 22px;word-wrap: normal;-webkit-text-size-adjust: none;Margin-bottom: 0;mso-margin-bottom-alt: 0'> @@Footer@@ </p></th> <th class=\"expander\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;visibility: hidden;width: 0;padding: 0'></th> </tr></tbody> </table> </th> </tr></tbody> </table> </center> </td></tr></tbody> </table> </td></tr></tbody> </table> <table role=\"presentation\" dir=\"ltr\" align=\"center\" class=\"container footer-template\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;background: #ffffff;width: 640px;Margin: 0 auto;text-align: inherit\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <td style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <table role=\"presentation\" class=\"wrapper outer-wrapper footer-wrapper\" align=\"center\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%;background-color: #F0F0F0\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <td class=\"wrapper-inner\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-right: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;padding-top: 12px;mso-padding-top-alt: 12px;padding-bottom: 12px;mso-padding-bottom-alt: 12px'> <center style=\"width: 100%;min-width: 640px\"> <table role=\"presentation\" class=\"row\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding: 0;width: 100%;position: relative;display: table\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <th class=\"small-12 large-12 columns first last\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;text-align: left;font-size: 14px;line-height: 20px;Margin: 0 auto;padding-left: 24px;padding-right: 24px;padding-top: 12px;mso-padding-top-alt: 12px;padding-bottom: 12px;mso-padding-bottom-alt: 12px;width: auto'> <table role=\"presentation\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\"> <tbody> <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\"> <th style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'> <p class=\"margin-top-8\" style='font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;Margin-bottom: 12px;word-wrap: normal;-webkit-text-size-adjust: none;Margin-top: 8px;mso-margin-top-alt: 8px;font-size: 12px;line-height: 16px;mso-line-height-alt: 16px;color: #484644'> This email was generated by the Azure Reserved Instance Notifier solution. </p><p class=\"margin-bottom-0\" style='font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;word-wrap: normal;-webkit-text-size-adjust: none;Margin-bottom: 0px;mso-margin-bottom-alt: 0px;font-size: 12px;line-height: 16px;mso-line-height-alt: 16px;color: #484644'> <a href=\"https://github.com/grimstoner/AzureReservedInstanceNotifier\" title=\"View on GitHub\" style='font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding: 0;text-align: left;line-height: 20px;color: #484644;display: inline-block;text-decoration: underline;text-underline: single'>View on GitHub</a> </p></th> <th class=\"expander\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;visibility: hidden;width: 0;padding: 0'> </th> </tr></tbody> </table> </th> </tr></tbody> </table> </center> </td></tr></tbody> </table> </td></tr></tbody> </table> </td></tr></tbody> </table> </center> </td></tr></tbody> </table> </body></html>"
+                },
+                "runAfter": {
+                    "Initialize_ReservationRows": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "AppendToStringVariable"
+            },
+            "Add_EmailBody_ReservationOrders": {
+                "inputs": {
+                    "name": "EmailBody",
+                    "value": "@{outputs('Compose_EmailBody')}"
+                },
+                "runAfter": {
+                    "Compose_EmailBody": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "SetVariable"
+            },
+            "Check_Action_parameter": {
+                "actions": {
+                    "Invalid_action_specified": {
+                        "inputs": {
+                            "runError": {
+                                "message": "Invalid mode option specified"
+                            },
+                            "runStatus": "Failed"
+                        },
+                        "runAfter": {},
+                        "type": "Terminate"
+                    }
+                },
+                "expression": {
+                    "and": [
+                        {
+                            "not": {
+                                "equals": [
+                                    "@triggerBody()?['action']",
+                                    "monitor"
+                                ]
+                            }
+                        },
+                        {
+                            "not": {
+                                "equals": [
+                                    "@triggerBody()?['action']",
+                                    "audit"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "runAfter": {},
+                "type": "If"
+            },
+            "Check_notification_range_parameters": {
+                "actions": {
+                    "Invalid_ranges_specified": {
+                        "inputs": {
+                            "runError": {
+                                "message": "One of the range values are invalid (only positive numbers are allowed)."
+                            },
+                            "runStatus": "Failed"
+                        },
+                        "runAfter": {},
+                        "type": "Terminate"
+                    }
+                },
+                "expression": {
+                    "and": [
+                        {
+                            "equals": [
+                                "@triggerBody()?['action']",
+                                "monitor"
+                            ]
+                        },
+                        {
+                            "or": [
+                                {
+                                    "lessOrEquals": [
+                                        "@triggerBody()?['range1min']",
+                                        0
+                                    ]
+                                },
+                                {
+                                    "lessOrEquals": [
+                                        "@triggerBody()?['range1max']",
+                                        0
+                                    ]
+                                },
+                                {
+                                    "lessOrEquals": [
+                                        "@triggerBody()?['range2min']",
+                                        0
+                                    ]
+                                },
+                                {
+                                    "lessOrEquals": [
+                                        "@triggerBody()?['range2max']",
+                                        0
+                                    ]
+                                },
+                                {
+                                    "lessOrEquals": [
+                                        "@triggerBody()?['range1max']",
+                                        "@triggerBody()?['range1min']"
+                                    ]
+                                },
+                                {
+                                    "lessOrEquals": [
+                                        "@triggerBody()?['range2max']",
+                                        "@triggerBody()?['range2min']"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "runAfter": {
+                    "Check_Action_parameter": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "If"
+            },
+            "Compose_EmailBody": {
+                "inputs": "@replace(variables('EmailBody'),'@@ReservationOrders@@', variables('ReservationOrders'))",
+                "runAfter": {
+                    "For_each_Reservation_Order": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "Compose"
+            },
+            "For_each_Reservation_Order": {
+                "actions": {
+                    "Days_To_Expiry": {
+                        "inputs": "@div(div(sub(ticks(body('Parse_Reservation_Order')?['properties']?['expiryDateTime']), ticks(utcNow())),10000000), 86400)",
+                        "runAfter": {
+                            "Parse_Reservation_Order": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "Compose"
+                    },
+                    "Parse_Reservation_Order": {
+                        "inputs": {
+                            "content": "@items('For_each_Reservation_Order')",
+                            "schema": {
+                                "properties": {
+                                    "etag": {
+                                        "type": "integer"
+                                    },
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "properties": {
+                                        "properties": {
+                                            "benefitStartTime": {
+                                                "type": "string"
+                                            },
+                                            "billingAccountId": {
+                                                "type": "string"
+                                            },
+                                            "billingPlan": {
+                                                "type": "string"
+                                            },
+                                            "billingProfileId": {
+                                                "type": "string"
+                                            },
+                                            "createdDateTime": {
+                                                "type": "string"
+                                            },
+                                            "displayName": {
+                                                "type": "string"
+                                            },
+                                            "expiryDateTime": {
+                                                "type": "string"
+                                            },
+                                            "originalQuantity": {
+                                                "type": "integer"
+                                            },
+                                            "provisioningState": {
+                                                "type": "string"
+                                            },
+                                            "requestDateTime": {
+                                                "type": "string"
+                                            },
+                                            "reservations": {
+                                                "items": {
+                                                    "properties": {
+                                                        "id": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "id"
+                                                    ],
+                                                    "type": "object"
+                                                },
+                                                "type": "array"
+                                            },
+                                            "term": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "runAfter": {},
+                        "type": "ParseJson"
+                    },
+                    "Should_include_in_report": {
+                        "actions": {
+                            "Add_ReservationOrder": {
+                                "inputs": {
+                                    "name": "ReservationOrders",
+                                    "value": "@outputs('Render_Reservation_Order')"
+                                },
+                                "runAfter": {
+                                    "Render_Reservation_Order": [
+                                        "Succeeded"
+                                    ]
+                                },
+                                "type": "AppendToStringVariable"
+                            },
+                            "Empty_Reservations": {
+                                "inputs": {
+                                    "name": "ReservationRows",
+                                    "value": "@{trim(' ')}"
+                                },
+                                "runAfter": {
+                                    "Add_ReservationOrder": [
+                                        "Succeeded"
+                                    ]
+                                },
+                                "type": "SetVariable"
+                            },
+                            "For_each_Reservation": {
+                                "actions": {
+                                    "Add_Reservation_Rows": {
+                                        "inputs": {
+                                            "name": "ReservationRows",
+                                            "value": "@outputs('Render_Reservation_Row')"
+                                        },
+                                        "runAfter": {
+                                            "Render_Reservation_Row": [
+                                                "Succeeded"
+                                            ]
+                                        },
+                                        "type": "AppendToStringVariable"
+                                    },
+                                    "Get_Reservation": {
+                                        "inputs": {
+                                            "authentication": {
+                                                "audience": "https://management.azure.com ",
+                                                "type": "ManagedServiceIdentity"
+                                            },
+                                            "method": "GET",
+                                            "uri": "https://management.azure.com/providers/Microsoft.Capacity/reservationOrders/@{outputs('Reservation_Order_Identifier')}/reservations/@{outputs('Reservation_Identifier')}?api-version=2022-03-01"
+                                        },
+                                        "runAfter": {
+                                            "Reservation_Identifier": [
+                                                "Succeeded"
+                                            ]
+                                        },
+                                        "type": "Http"
+                                    },
+                                    "Parse_Reservation": {
+                                        "inputs": {
+                                            "content": "@body('Get_Reservation')",
+                                            "schema": {
+                                                "properties": {
+                                                    "etag": {
+                                                        "type": "integer"
+                                                    },
+                                                    "id": {
+                                                        "type": "string"
+                                                    },
+                                                    "location": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "properties": {
+                                                        "properties": {
+                                                            "appliedScopeType": {
+                                                                "type": "string"
+                                                            },
+                                                            "archived": {
+                                                                "type": "boolean"
+                                                            },
+                                                            "benefitStartTime": {
+                                                                "type": "string"
+                                                            },
+                                                            "billingPlan": {
+                                                                "type": "string"
+                                                            },
+                                                            "billingScopeId": {
+                                                                "type": "string"
+                                                            },
+                                                            "displayName": {
+                                                                "type": "string"
+                                                            },
+                                                            "effectiveDateTime": {
+                                                                "type": "string"
+                                                            },
+                                                            "expiryDate": {
+                                                                "type": "string"
+                                                            },
+                                                            "extendedStatusInfo": {
+                                                                "properties": {
+                                                                    "message": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "statusCode": {
+                                                                        "type": "string"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            },
+                                                            "instanceFlexibility": {
+                                                                "type": "string"
+                                                            },
+                                                            "lastUpdatedDateTime": {
+                                                                "type": "string"
+                                                            },
+                                                            "provisioningState": {
+                                                                "type": "string"
+                                                            },
+                                                            "quantity": {
+                                                                "type": "integer"
+                                                            },
+                                                            "renew": {
+                                                                "type": "boolean"
+                                                            },
+                                                            "reservedResourceType": {
+                                                                "type": "string"
+                                                            },
+                                                            "skuDescription": {
+                                                                "type": "string"
+                                                            },
+                                                            "term": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    },
+                                                    "sku": {
+                                                        "properties": {
+                                                            "name": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    },
+                                                    "type": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "runAfter": {
+                                            "Get_Reservation": [
+                                                "Succeeded"
+                                            ]
+                                        },
+                                        "type": "ParseJson"
+                                    },
+                                    "Parse_Reservation_Id": {
+                                        "inputs": {
+                                            "content": "@items('For_each_Reservation')",
+                                            "schema": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "runAfter": {},
+                                        "type": "ParseJson"
+                                    },
+                                    "Render_Reservation_Row": {
+                                        "inputs": "<tr\n  class=\"text-group\"\n  style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n  <td\n    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n    @{body('Parse_Reservation')?['properties']?['reservedResourceType']}\n  </td>\n  <td\n    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n    @{body('Parse_reservation')?['sku']?['name']}\n  </td>\n  <td\n    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n    @{body('Parse_Reservation')?['properties']?['quantity']}\n  </td>\n  <td\n    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n    @{body('Parse_Reservation')?['properties']?['instanceFlexibility']}\n  </td>\n  <td\n    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n    @{body('Parse_Reservation')?['properties']?['renew']}\n  </td>\n  <td\n    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n    @{formatDateTime(body('Parse_Reservation')?['properties']?['expiryDate'], 'dd/MM/yyyy')}\n  </td>\n  <td\n    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n    @{if(equals(body('Parse_Reservation')?['properties']?['provisioningState'],'Cancelled'), body('Parse_Reservation')?['properties']?['extendedStatusInfo']?['statusCode'], 'Active')}\n  </td>\n</tr>",
+                                        "runAfter": {
+                                            "Parse_Reservation": [
+                                                "Succeeded"
+                                            ]
+                                        },
+                                        "type": "Compose"
+                                    },
+                                    "Reservation_Identifier": {
+                                        "inputs": "@last(split(body('Parse_Reservation_Id')?['id'], '/'))",
+                                        "runAfter": {
+                                            "Parse_Reservation_Id": [
+                                                "Succeeded"
+                                            ]
+                                        },
+                                        "type": "Compose"
+                                    }
+                                },
+                                "foreach": "@body('Parse_Reservation_Order')?['properties']?['reservations']",
+                                "runAfter": {
+                                    "Reservation_Order_Identifier": [
+                                        "Succeeded"
+                                    ]
+                                },
+                                "type": "Foreach"
+                            },
+                            "Render_Reservation_Order": {
+                                "inputs": "<table role=\"presentation\" align=\"center\" class=\"row collapse-bottom float-center\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding: 0;width: 100%;position: relative;Margin: 0 auto;float: none;text-align: center;display: table\">\n    <tbody>\n        <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n            <th class=\"small-12 large-12 columns first last\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;text-align: left;font-size: 14px;line-height: 20px;Margin: 0 auto;width: 616px;padding-top: 12px;mso-padding-top-alt: 12px;padding-bottom: 12px;mso-padding-bottom-alt: 12px;padding-left: 24px;padding-right: 24px'>\n                <table role=\"presentation\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\">\n                    <tbody>\n                        <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                            <th style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'>\n                                <h4 style='padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;color: inherit;Margin-bottom: 16px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600;font-size: 18px;line-height: 24px;mso-line-height-alt: 24px;word-wrap: normal;-webkit-text-size-adjust: none'>\n                                   Reservation:  @{body('Parse_Reservation_Order')?['properties']?['displayName']}\n                                </h4>\n                            </th>\n                            <th class=\"expander\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;visibility: hidden;width: 0;padding: 0'></th>\n                        </tr>\n                    </tbody>\n                </table>\n            </th>\n        </tr>\n    </tbody>\n</table>\n\n<table role=\"presentation\" align=\"center\" class=\"row float-center\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding: 0;width: 100%;position: relative;Margin: 0 auto;float: none;text-align: center;display: table\">\n    <tbody>\n        <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n            <th class=\"small-12 large-12 columns first last\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;text-align: left;font-size: 14px;line-height: 20px;Margin: 0 auto;width: 616px;padding-top: 12px;mso-padding-top-alt: 12px;padding-bottom: 12px;mso-padding-bottom-alt: 12px;padding-left: 24px;padding-right: 24px'>\n                <table role=\"presentation\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\">\n                    <tbody>\n                        <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                            <th style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'>\n                                <table role=\"presentation\" class=\"styled-table-alt table-cols-2\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;max-width: 592px;width: 100%\">\n                                    <tbody>\n                                        <tr class=\"heading-group\" style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                                            <th style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 2px #c9c9c9;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600'>\n                                                Id\n                                            </th>\n                                            <th style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 2px #c9c9c9;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600'>\n                                                @{body('Parse_Reservation_Order')?['name']}\n                                            </th>\n                                        </tr>\n                                        <tr class=\"text-group\" style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                Benefit Start Time\n                                            </td>\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                @{formatDateTime(body('Parse_Reservation_Order')?['properties']?['benefitStartTime'], 'dd/MM/yyyy hh:mm')}\n                                            </td>\n                                        </tr>\n                                        <tr class=\"text-group\" style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                State\n                                            </td>\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                @{body('Parse_Reservation_Order')?['properties']?['provisioningState']}\n                                            </td>\n                                        </tr>\n                                        <tr class=\"text-group\" style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                Billing Plan\n                                            </td>\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                @{body('Parse_Reservation_Order')?['properties']?['billingPlan']}\n                                            </td>\n                                        </tr>\n                                        <tr class=\"text-group\" style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                Term\n                                            </td>\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                @{body('Parse_Reservation_Order')?['properties']?['term']}\n                                            </td>\n                                        </tr>\n                                        <tr class=\"text-group\" style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                Expires\n                                            </td>\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                @{formatDateTime(body('Parse_Reservation_Order')?['properties']?['expiryDateTime'], 'dd/MM/yyyy hh:mm')}\n                                            </td>\n                                        </tr>\n                                        <tr class=\"text-group\" style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                Days to expiry\n                                            </td>\n                                            <td style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>\n                                                @{outputs('Days_To_Expiry')}\n                                            </td>\n\n                                        </tr>\n                                    </tbody>\n                                </table>\n                            </th>\n                            <th class=\"expander\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;visibility: hidden;width: 0;padding: 0'>\n                            </th>\n                        </tr>\n                    </tbody>\n                </table>\n            </th>\n        </tr>\n    </tbody>\n</table>\n\n<table role=\"presentation\" align=\"center\" class=\"row collapse-bottom float-center\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding: 0;width: 100%;position: relative;Margin: 0 auto;float: none;text-align: center;display: table\">\n    <tbody>\n        <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n            <th class=\"small-12 large-12 columns first last\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;text-align: left;font-size: 14px;line-height: 20px;Margin: 0 auto;width: 616px;padding-top: 12px;mso-padding-top-alt: 12px;padding-bottom: 12px;mso-padding-bottom-alt: 12px;padding-left: 24px;padding-right: 24px'>\n                <table role=\"presentation\" style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\">\n                    <tbody>\n                        <tr style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                            <th style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'>\n                                <span style='padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;color: inherit;Margin-bottom: 6px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600;font-size: 16px;;word-wrap: normal;-webkit-text-size-adjust: none'>\n                                    Reservations in this order:\n                                </span>\n                            </th>\n                            <th class=\"expander\" style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;visibility: hidden;width: 0;padding: 0'></th>\n                        </tr>\n                    </tbody>\n                </table>\n            </th>\n        </tr>\n    </tbody>\n</table>\n\n<table\n  role=\"presentation\"\n  align=\"center\"\n  class=\"row float-center\"\n  style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;mso-table-lspace: -1pt;mso-table-rspace: -1pt;padding: 0;width: 100%;position: relative;Margin: 0 auto;float: none;text-align: center;display: table\">\n  <tbody>\n    <tr\n      style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n      <th\n        class=\"small-12 large-12 columns first last\"\n        style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;text-align: left;font-size: 14px;line-height: 20px;Margin: 0 auto;width: 616px;padding-top: 12px;mso-padding-top-alt: 12px;padding-bottom: 12px;mso-padding-bottom-alt: 12px;padding-left: 24px;padding-right: 24px'>\n        <table\n          role=\"presentation\"\n          style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;width: 100%\">\n          <tbody>\n            <tr\n              style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n              <th\n                style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px'>\n                <table\n                  role=\"presentation\"\n                  class=\"styled-table-alt table-cols-2\"\n                  style=\"border-spacing: 0;border-collapse: collapse;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left;mso-table-lspace: -1pt;mso-table-rspace: -1pt;max-width: 592px;width: 100%\">\n                  <tbody>\n                    <tr\n                      class=\"heading-group\"\n                      style=\"padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left\">\n                      <th\n                        style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 2px #c9c9c9;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600'>\n                        Type\n                      </th>\n                      <th\n                        style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 2px #c9c9c9;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600'>\n                        SKU\n                      </th>\n                      <th\n                        style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 2px #c9c9c9;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600'>\n                        Quantity\n                      </th>                     \n                      <th\n                        style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 2px #c9c9c9;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600'>\n                        Flexible\n                      </th>\n                      <th\n                        style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 2px #c9c9c9;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600'>\n                        Renew\n                      </th>\n                      <th\n                        style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 2px #c9c9c9;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600'>\n                        Expires\n                      </th>\n                      <th\n                        style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 2px #c9c9c9;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px;font-family: Segoe UI Semibold, SegoeUISemibold, Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 600'>\n                        Status\n                      </th>\n                    </tr>\n                    \n                    @{variables('ReservationRows')}\n                  </tbody>\n                </table>\n              </th>\n              <th\n                class=\"expander\"\n                style='word-wrap: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;visibility: hidden;width: 0;padding: 0'>\n              </th>\n            </tr>\n          </tbody>\n        </table>\n      </th>\n    </tr>\n  </tbody>\n</table>",
+                                "runAfter": {
+                                    "For_each_Reservation": [
+                                        "Succeeded"
+                                    ]
+                                },
+                                "type": "Compose"
+                            },
+                            "Reservation_Order_Identifier": {
+                                "inputs": "@body('Parse_Reservation_Order')?['name']",
+                                "runAfter": {
+                                    "Set_should_EmailResults_true": [
+                                        "Succeeded"
+                                    ]
+                                },
+                                "type": "Compose"
+                            },
+                            "Set_should_EmailResults_true": {
+                                "inputs": {
+                                    "name": "EmailResults",
+                                    "value": "@true"
+                                },
+                                "runAfter": {},
+                                "type": "SetVariable"
+                            }
+                        },
+                        "expression": {
+                            "or": [
+                                {
+                                    "and": [
+                                        {
+                                            "equals": [
+                                                "@triggerBody()?['action']",
+                                                "audit"
+                                            ]
+                                        },
+                                        {
+                                            "or": [
+                                                {
+                                                    "equals": [
+                                                        "@triggerBody()?['activeOnly']",
+                                                        "@false"
+                                                    ]
+                                                },
+                                                {
+                                                    "and": [
+                                                        {
+                                                            "equals": [
+                                                                "@triggerBody()?['activeOnly']",
+                                                                "@true"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "greater": [
+                                                                "@body('Parse_Reservation_Order')?['properties']?['expiryDateTime']",
+                                                                "@utcNow()"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "and": [
+                                        {
+                                            "equals": [
+                                                "@triggerBody()?['action']",
+                                                "monitor"
+                                            ]
+                                        },
+                                        {
+                                            "or": [
+                                                {
+                                                    "and": [
+                                                        {
+                                                            "greater": [
+                                                                "@outputs('Days_To_Expiry')",
+                                                                "@triggerBody()?['range1min']"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "less": [
+                                                                "@outputs('Days_To_Expiry')",
+                                                                "@triggerBody()?['range1max']"
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "and": [
+                                                        {
+                                                            "greater": [
+                                                                "@outputs('Days_To_Expiry')",
+                                                                "@triggerBody()?['range2min']"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "less": [
+                                                                "@outputs('Days_To_Expiry')",
+                                                                "@triggerBody()?['range2max']"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "runAfter": {
+                            "Days_To_Expiry": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "If"
+                    }
+                },
+                "foreach": "@body('Parse_Reservation_Orders')?['value']",
+                "runAfter": {
+                    "Set_EmailBody_Text_for_Audit_or_Monitor": [
+                        "Succeeded"
+                    ]
+                },
+                "runtimeConfiguration": {
+                    "concurrency": {
+                        "repetitions": 1
+                    }
+                },
+                "type": "Foreach"
+            },
+            "Get_Reservation_Orders": {
+                "inputs": {
+                    "authentication": {
+                        "audience": "https://management.azure.com ",
+                        "type": "ManagedServiceIdentity"
+                    },
+                    "method": "GET",
+                    "uri": "https://management.azure.com/providers/Microsoft.Capacity/reservationOrders?api-version=2022-11-01"
+                },
+                "runAfter": {
+                    "Check_notification_range_parameters": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "Http"
+            },
+            "Initialize_EmailBody_HTML_Header_and_Scripts": {
+                "inputs": {
+                    "variables": [
+                        {
+                            "name": "EmailBody",
+                            "type": "string",
+                            "value": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"><html xmlns=\"https://www.w3.org/1999/xhtml\" lang=\"en\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" style=\"min-height: 100%;background: #ffffff\"><head> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/> <meta name=\"viewport\" content=\"width=device-width\"/> <meta name=\"eventId\" content=\"flow-failure-digest\"/> <meta name=\"cloud\" content=\"AZ\"/> <title>Azure Reserved Instance Notifier</title> <style id=\"mediaqueries\"> @media only screen and (max-width: 640px){.wrap-dangler{padding-right: 10% !important; mso-padding-right-alt: 10% !important;}.wrap-dangler.small-text-center .wrap-dangler.text-center{padding-left: 10% !important; mso-padding-left-alt: 10% !important; padding-right: 10% !important; mso-padding-right-alt: 10% !important;}}@media only screen and (max-width: 640px){p.comment-border-right{margin-left: 0 !important; Margin-left: 0 !important; mso-margin-left-alt: 0 !important;}}@media only screen and (max-width: 640px){p.comment-border-left{margin-left: 0 !important; Margin-left: 0 !important; mso-margin-left-alt: 0 !important;}}@media only screen and (max-width: 640px){.small-float-left{margin-left: 0 !important; float: none !important; text-align: left !important;}}@media only screen and (max-width: 640px){.show-for-large{display: none !important; width: 0; mso-hide: all; overflow: hidden;}}@media only screen and (max-width: 640px){.wrap-dangler{padding-right: 10% !important; mso-padding-right-alt: 10% !important;}.wrap-dangler.small-text-center .wrap-dangler.text-center{padding-left: 10% !important; mso-padding-left-alt: 10% !important; padding-right: 10% !important; mso-padding-right-alt: 10% !important;}}@media only screen and (max-width: 640px){p.comment-border-right{margin-left: 0 !important; Margin-left: 0 !important; mso-margin-left-alt: 0 !important;}}@media only screen and (max-width: 640px){p.comment-border-left{margin-left: 0 !important; Margin-left: 0 !important; mso-margin-left-alt: 0 !important;}}@media only screen and (max-width: 640px){.small-float-left{margin-left: 0 !important; float: none !important; text-align: left !important;}}@media only screen{html{min-height: 100%; background: #ffffff;}}@media only screen and (max-width: 640px){.small-float-center{margin: 0 auto !important; float: none !important; text-align: center !important;}.small-text-center{text-align: center !important;}.small-text-left{text-align: left !important;}.small-text-right{text-align: right !important;}}@media only screen and (max-width: 640px){.hide-for-large{display: block !important; width: auto !important; overflow: visible !important; max-height: none !important; font-size: inherit !important; line-height: inherit !important;}}@media only screen and (max-width: 640px){table.body table.container .hide-for-large, table.body table.container .row.hide-for-large{display: table !important; width: 100% !important;}}@media only screen and (max-width: 640px){table.body table.container .callout-inner.hide-for-large{display: table-cell !important; width: 100% !important;}}@media only screen and (max-width: 640px){table.body table.container .show-for-large{display: none !important; width: 0; mso-hide: all; overflow: hidden;}}@media only screen{a[x-apple-data-detectors]{color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;}}@media only screen and (max-width: 640px){.menu.small-vertical .menu-item{padding-left: 0 !important; padding-right: 0 !important;}}@media only screen and (max-width: 640px){table.body img{width: auto; height: auto;}table.body center{min-width: 0 !important;}table.body .container{width: 95% !important;}table.body .columns, table.body .column{height: auto !important; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 16px !important; padding-right: 16px !important;}table.body .columns .column, table.body .columns .columns, table.body .column .column, table.body .column .columns{padding-left: 0 !important; padding-right: 0 !important;}table.body .collapse .columns, table.body .collapse .column{padding-left: 0 !important; padding-right: 0 !important;}td.small-1, th.small-1{display: inline-block !important; width: 8.33333% !important;}td.small-2, th.small-2{display: inline-block !important; width: 16.66667% !important;}td.small-3, th.small-3{display: inline-block !important; width: 25% !important;}td.small-4, th.small-4{display: inline-block !important; width: 33.33333% !important;}td.small-5, th.small-5{display: inline-block !important; width: 41.66667% !important;}td.small-6, th.small-6{display: inline-block !important; width: 50% !important;}td.small-7, th.small-7{display: inline-block !important; width: 58.33333% !important;}td.small-8, th.small-8{display: inline-block !important; width: 66.66667% !important;}td.small-9, th.small-9{display: inline-block !important; width: 75% !important;}td.small-10, th.small-10{display: inline-block !important; width: 83.33333% !important;}td.small-11, th.small-11{display: inline-block !important; width: 91.66667% !important;}td.small-12, th.small-12{display: inline-block !important; width: 100% !important;}.columns td.small-12, .column td.small-12, .columns th.small-12, .column th.small-12{display: block !important; width: 100% !important;}table.body td.small-offset-1, table.body th.small-offset-1{margin-left: 8.33333% !important; Margin-left: 8.33333% !important;}table.body td.small-offset-2, table.body th.small-offset-2{margin-left: 16.66667% !important; Margin-left: 16.66667% !important;}table.body td.small-offset-3, table.body th.small-offset-3{margin-left: 25% !important; Margin-left: 25% !important;}table.body td.small-offset-4, table.body th.small-offset-4{margin-left: 33.33333% !important; Margin-left: 33.33333% !important;}table.body td.small-offset-5, table.body th.small-offset-5{margin-left: 41.66667% !important; Margin-left: 41.66667% !important;}table.body td.small-offset-6, table.body th.small-offset-6{margin-left: 50% !important; Margin-left: 50% !important;}table.body td.small-offset-7, table.body th.small-offset-7{margin-left: 58.33333% !important; Margin-left: 58.33333% !important;}table.body td.small-offset-8, table.body th.small-offset-8{margin-left: 66.66667% !important; Margin-left: 66.66667% !important;}table.body td.small-offset-9, table.body th.small-offset-9{margin-left: 75% !important; Margin-left: 75% !important;}table.body td.small-offset-10, table.body th.small-offset-10{margin-left: 83.33333% !important; Margin-left: 83.33333% !important;}table.body td.small-offset-11, table.body th.small-offset-11{margin-left: 91.66667% !important; Margin-left: 91.66667% !important;}table.body table.columns td.expander, table.body table.columns th.expander{display: none !important;}table.body .right-text-pad, table.body .text-pad-right{padding-left: 12px !important;}table.body .left-text-pad, table.body .text-pad-left{padding-right: 12px !important;}table.menu{width: 100% !important;}table.menu td, table.menu th{width: auto !important; display: inline-block !important;}table.menu.vertical td, table.menu.vertical th, table.menu.small-vertical td, table.menu.small-vertical th{display: block !important;}table.menu[align=\"center\"]{width: auto !important;}table.button.small-expand, table.button.small-expanded{width: 100% !important;}table.button.small-expand table, table.button.small-expanded table{width: 100%;}table.button.small-expand table a, table.button.small-expanded table a{text-align: center !important; width: 100% !important; padding-left: 0 !important; padding-right: 0 !important;}table.button.small-expand center, table.button.small-expanded center{min-width: 0;}}@media (min-resolution: 1dpi){body[data-outlook-cycle] .main-container>table{width: 640px;}body[data-outlook-cycle] .container-wide .main-container>table{width: 888px;}}@media only screen and (max-width: 640px){.outer-wrapper>tbody>tr>.wrapper-inner, table.body .columns, table.body .column{padding-left: 12px !important; padding-right: 12px !important;}.main-container>.float-center{width: 100%;}}@media only screen and (max-width: 888px){body.container-wide .main-container>table{width: 100% !important;}}@media only screen and (max-width: 640px){table.button.secondary a{font-size: 16px !important; line-height: 22px !important;}.header-right-column table.button table td a{font-size: 13px !important; line-height: 1 !important;}}@media only screen and (max-width: 640px){.section .card-table th:first-child{padding-bottom: 0px !important; mso-padding-bottom-alt: 0px !important;}}@media only screen and (max-width: 640px){.section .card-table td, .section .card-table th:last-child{padding-top: 0px !important; mso-padding-top-alt: 0px !important;}}@media only screen and (max-width: 640px){.section .card-table.mobile-padding td{padding-top: 8px !important; mso-padding-top-alt: 8px !important;}}@media only screen and (max-width: 640px){.section .card-table tr.border-top td, .section .card-table tr.border-top th:last-child{border: none !important;}}@media only screen and (max-width: 640px){.section .card-table.no-stack tr.border-top td, .section .card-table.no-stack tr.border-top th{border-top: 1px solid #dedede !important;}}@media only screen and (max-width: 640px){.section .card-table.no-stack th, .section .card-table.no-stack td{padding-top: 8px !important; mso-padding-top-alt: 8px !important; padding-bottom: 8px !important; mso-padding-bottom-alt: 8px !important;}}@media only screen and (max-width: 640px){.section .card-row .columns.first{padding-bottom: 0px !important; mso-padding-bottom-alt: 0px !important;}}@media only screen and (max-width: 640px){.section .card-row .columns.last{padding-top: 0px !important; mso-padding-top-alt: 0px !important;}}@media only screen and (max-width: 640px){.header-section .stack-for-small th{display: block; width: 100% !important;}.header-section .stack-for-small .header-right-column{padding-bottom: 0 !important; padding-top: 24px !important;}.header-section .stack-for-small .header-right-column, .header-section .stack-for-small .header-right-column p{text-align: left !important;}}@media only screen and (max-width: 640px){.logo-microsoft-azure{max-height: 21px; max-width: 100%;}}@media only screen and (max-width: 640px){.logo-microsoft-viva{max-height: 21px; max-width: 100%;}}@media only screen and (max-width: 640px){.logo-microsoft-dynamic365{max-height: 21px; max-width: 100%;}}@media only screen and (max-width: 640px){.list-row .columns.first, .list-row .list-items{padding-bottom: 0 !important; mso-padding-bottom-alt: 0 !important;}.list-row .columns.last, .list-row .list-items{padding-top: 0 !important; mso-padding-top-alt: 0 !important;}}@media only screen and (max-width: 640px){.number-bar .interior-bar td{padding-top: 0px !important; mso-padding-top-alt: 0px !important; padding-bottom: 0px !important; mso-padding-bottom-alt: 0px !important;}}@media only screen and (max-width: 640px){.small-display-block{display: block !important;}.small-text-medium{font-size: 18px !important;}.small-text-left{text-align: left !important;}.small-bottom-padding-8{padding-bottom: 8px !important; mso-padding-bottom-alt: 8px !important;}.small-top-padding-0{padding-top: 0 !important; mso-padding-top-alt: 0 !important;}.video-container img{margin-bottom: 10px; Margin-bottom: 10px; mso-margin-bottom-alt: 10px;}.video-container .video-thumbnail img{max-width: 580px; width: 300px;}.list-items p{text-align: left !important; font-size: 20px;}.list-items p, .list-items img{line-height: 13px !important; mso-line-height-alt: 13px; margin-bottom: 8px; Margin-bottom: 8px; mso-margin-bottom-alt: 8px; text-align: left;}.list-items img{vertical-align: middle !important; margin-top: 5px !important;}.list-items.bullet-small th img{padding-top: 0; mso-padding-top-alt: 0;}table.body{min-width: 320px !important;}table.body .main-container{padding: 0 !important;}table.body .main-container>table.container{min-width: 300px !important;}table.body table.container{width: 100% !important;}.header-section img{height: auto !important;}.header-section .small-6, .header-section .large-3, .header-section .large-6{margin-top: 0px; Margin-top: 0px; mso-margin-top-alt: 0px; margin-bottom: 0px; Margin-bottom: 0px; mso-margin-bottom-alt: 0px;}.header-section .heading-container{margin-bottom: 0px; Margin-bottom: 0px; mso-margin-bottom-alt: 0px;}.header-section .heading-container p{font-family: Segoe UI, SegoeUI, Roboto, \"Helvetica Neue\", Arial, sans-serif;}.header-section p.amount-title{line-height: 16px; mso-line-height-alt: 16px; font-size: 12px !important; word-wrap: break-word !important; margin: 0 15px 10px 15px; mso-margin-alt: 0 15px 10px 15px; padding-top: 0 !important;}.header-section p.amount-value{font-size: 24px; line-height: 18px; mso-line-height-alt: 18px; margin: 0 15px 10px 15px; mso-margin-alt: 0 15px 10px 15px; padding: 0;}.section .columns{padding-top: 0px; mso-padding-top-alt: 0px; padding-bottom: 0px; mso-padding-bottom-alt: 0px;}.section .show-for-small{display: block !important; visibility: visible !important; height: auto !important; mso-height-alt: auto !important; max-height: none !important; mso-max-height-alt: none !important; mso-hide: none !important; overflow: visible !important;}table.footer-template p{font-size: 12px !important; line-height: 16px !important;}.wrapper.wrapper-inner-540-large .wrapper-inner .container{width: 100%;}.wrapper.wrapper-inner-20 .wrapper-inner{padding-left: 0px !important; mso-padding-left-alt: 0px !important; padding-right: 20px !important; mso-padding-right-alt: 20px !important;}.no-pad-for-small table th{padding-left: 0px !important; mso-padding-left-alt: 0px !important; padding-right: 0px !important; mso-padding-right-alt: 0px !important;}.large-pad-left table th{padding-left: 0px !important; mso-padding-left-alt: 0px !important;}.large-pad-right table th{padding-right: 0px !important; mso-padding-right-alt: 0px !important;}.max-width img{height: auto !important; width: 100% !important; max-width: 100% !important;}}@media only screen and (max-width: 888px){.max-width img{height: auto !important; width: 100% !important; max-width: 100% !important;}}@media only screen and (max-width: 640px){.button{min-width: 132px !important;}}@media only screen and (max-width: 640px){.standard-table td{padding-bottom: 5px !important; mso-padding-bottom-alt: 5px !important;}}@media only screen and (max-width: 640px){.table-default.table-heading-rows, .table-default.table-heading-rows-loop{display: table !important;}.table-default.table-heading-rows th, .table-default.table-heading-rows td, .table-default.table-heading-rows-loop th, .table-default.table-heading-rows-loop td{padding: 0 !important; mso-padding-alt: 0 !important; display: block; padding-left: 0 !important; padding-right: 0 !important; padding-top: 6px !important;}.table-default.table-heading-rows td, .table-default.table-heading-rows-loop td{border-top: none !important; padding-bottom: 6px !important; padding-top: none !important;}.table-default.table-heading-rows td.wrap-word, .table-default.table-heading-rows .code-block td.wrapper-inner, .code-block .table-default.table-heading-rows td.wrapper-inner, .table-default.table-heading-rows-loop td.wrap-word, .table-default.table-heading-rows-loop .code-block td.wrapper-inner, .code-block .table-default.table-heading-rows-loop td.wrapper-inner{display: block !important;}.table-default.table-heading-rows th, .table-default.table-heading-rows-loop th{width: 100% !important; padding-bottom: none !important; padding-top: 6px !important;}.table-default.table-heading-rows.no-stack td, .table-default.table-heading-rows-loop.no-stack td{padding-left: 12px !important;}.table-default.table-heading-rows.no-stack td.wrap-word, .table-default.table-heading-rows.no-stack .code-block td.wrapper-inner, .code-block .table-default.table-heading-rows.no-stack td.wrapper-inner, .table-default.table-heading-rows-loop.no-stack td.wrap-word, .table-default.table-heading-rows-loop.no-stack .code-block td.wrapper-inner, .code-block .table-default.table-heading-rows-loop.no-stack td.wrapper-inner{display: table-cell;}.table-default.table-heading-rows.no-stack th, .table-default.table-heading-rows-loop.no-stack th{width: 1% !important; padding-right: 12px !important;}.table-default.table-heading-rows.no-stack:first-child th, .table-default.table-heading-rows.no-stack:first-child td, .table-default.table-heading-rows.no-stack .table-heading-rows-loop:first-child th, .table-default.table-heading-rows.no-stack .table-heading-rows-loop:first-child td, .table-default.table-heading-rows-loop.no-stack:first-child th, .table-default.table-heading-rows-loop.no-stack:first-child td, .table-default.table-heading-rows-loop.no-stack .table-heading-rows-loop:first-child th, .table-default.table-heading-rows-loop.no-stack .table-heading-rows-loop:first-child td{border-top: none !important;}.table-default.table-heading-rows.no-stack th, .table-default.table-heading-rows.no-stack td, .table-default.table-heading-rows-loop.no-stack th, .table-default.table-heading-rows-loop.no-stack td{display: table-cell !important; border-top: solid 1px #dedede !important; padding-top: 8px !important; mso-padding-top-alt: 8px !important; padding-bottom: 8px !important; mso-padding-bottom-alt: 8px !important;}.table-default.table-heading-rows.no-stack.table-heading-rows-loop th, .table-default.table-heading-rows.no-stack.table-heading-rows-loop td, .table-default.table-heading-rows-loop.no-stack.table-heading-rows-loop th, .table-default.table-heading-rows-loop.no-stack.table-heading-rows-loop td{border-top: none !important;}.table-default.table-heading-rows.no-stack.table-heading-rows-loop .table-row-loop-start:first-child th, .table-default.table-heading-rows.no-stack.table-heading-rows-loop .table-row-loop-start:first-child td, .table-default.table-heading-rows-loop.no-stack.table-heading-rows-loop .table-row-loop-start:first-child th, .table-default.table-heading-rows-loop.no-stack.table-heading-rows-loop .table-row-loop-start:first-child td{border-top: none !important;}.table-default.table-heading-rows.no-stack.table-heading-rows-loop .table-row-loop-start th, .table-default.table-heading-rows.no-stack.table-heading-rows-loop .table-row-loop-start td, .table-default.table-heading-rows-loop.no-stack.table-heading-rows-loop .table-row-loop-start th, .table-default.table-heading-rows-loop.no-stack.table-heading-rows-loop .table-row-loop-start td{border-top: solid 1px #dedede !important;}}@media only screen and (max-width: 640px){.power-bi.container-mooncake .header-section img{height: auto !important; max-height: 16px; max-width: 100%;}}</style><!--[if gte (gte mso 9)|(IE)]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> <style>li{text-align:-webkit-match-parent; display:list-item; text-indent: -1em;}.alert span, .arrow-link, b, h1, h2, h3, h4, h5, .heading-group th, strong, .card-table th, .header-right-column, .styled-table th, .styled-table td, .text-heading1, .text-heading2, .text-heading3, .text-heading4, .text-heading5, .text-bold, table.button a, .wrapper-inner a, .wrapper-inner p{font-weight: 400 !important;}</style><![endif]--></head>"
+                        }
+                    ]
+                },
+                "runAfter": {
+                    "Parse_Reservation_Orders": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "InitializeVariable"
+            },
+            "Initialize_EmailResults_Boolean": {
+                "inputs": {
+                    "variables": [
+                        {
+                            "name": "EmailResults",
+                            "type": "boolean",
+                            "value": "@false"
+                        }
+                    ]
+                },
+                "runAfter": {
+                    "Add_EmailBody_HTML_Content": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "InitializeVariable"
+            },
+            "Initialize_ReservationOrders": {
+                "inputs": {
+                    "variables": [
+                        {
+                            "name": "ReservationOrders",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "runAfter": {
+                    "Initialize_EmailBody_HTML_Header_and_Scripts": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "InitializeVariable"
+            },
+            "Initialize_ReservationRows": {
+                "inputs": {
+                    "variables": [
+                        {
+                            "name": "ReservationRows",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "runAfter": {
+                    "Initialize_ReservationOrders": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "InitializeVariable"
+            },
+            "Parse_Reservation_Orders": {
+                "inputs": {
+                    "content": "@body('Get_Reservation_Orders')",
+                    "schema": {
+                        "properties": {
+                            "nextLink": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "items": {
+                                    "properties": {
+                                        "etag": {
+                                            "type": "integer"
+                                        },
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "properties": {
+                                            "properties": {
+                                                "benefitStartTime": {
+                                                    "type": "string"
+                                                },
+                                                "billingPlan": {
+                                                    "type": "string"
+                                                },
+                                                "createdDateTime": {
+                                                    "type": "string"
+                                                },
+                                                "displayName": {
+                                                    "type": "string"
+                                                },
+                                                "expiryDate": {
+                                                    "type": "string"
+                                                },
+                                                "originalQuantity": {
+                                                    "type": "integer"
+                                                },
+                                                "provisioningState": {
+                                                    "type": "string"
+                                                },
+                                                "requestDateTime": {
+                                                    "type": "string"
+                                                },
+                                                "reservations": {
+                                                    "items": {
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "id"
+                                                        ],
+                                                        "type": "object"
+                                                    },
+                                                    "type": "array"
+                                                },
+                                                "term": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "id",
+                                        "type",
+                                        "name",
+                                        "etag",
+                                        "properties"
+                                    ],
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "runAfter": {
+                    "Get_Reservation_Orders": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "ParseJson"
+            },
+            "Set_EmailBody_Text_for_Audit_or_Monitor": {
+                "actions": {
+                    "Compose_EmailBody_footer_-_audit": {
+                        "inputs": "@trim(' ')",
+                        "runAfter": {
+                            "Compose_EmailBody_subtitle_-_audit": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "Compose"
+                    },
+                    "Compose_EmailBody_subtitle_-_audit": {
+                        "inputs": "The results of the audit requested for @{triggerBody()?['identifier']} on @{formatDateTime(utcNow(), 'dd/MM/yyyy hh:mm')} is shown below @{if(triggerBody()?['activeOnly'], '(inactive reservations have been excluded)', '')}:",
+                        "runAfter": {
+                            "Compose_EmailBody_title_-_audit": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "Compose"
+                    },
+                    "Compose_EmailBody_title_-_audit": {
+                        "inputs": "Reservation Audit for @{triggerBody()?['identifier']}",
+                        "runAfter": {},
+                        "type": "Compose"
+                    },
+                    "Inject_footer_-_audit": {
+                        "inputs": "@replace(outputs('Inject_subtitle_-_audit'), '@@Footer@@', outputs('Compose_EmailBody_footer_-_audit'))",
+                        "runAfter": {
+                            "Inject_subtitle_-_audit": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "Compose"
+                    },
+                    "Inject_subtitle_-_audit": {
+                        "inputs": "@replace(outputs('Inject_title_-_audit'), '@@SubTitle@@', outputs('Compose_EmailBody_subtitle_-_audit'))",
+                        "runAfter": {
+                            "Inject_title_-_audit": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "Compose"
+                    },
+                    "Inject_title_-_audit": {
+                        "inputs": "@replace(variables('EmailBody'), '@@Title@@', outputs('Compose_EmailBody_title_-_audit'))",
+                        "runAfter": {
+                            "Compose_EmailBody_footer_-_audit": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "Compose"
+                    },
+                    "Update_EmailBody_-_audit": {
+                        "inputs": {
+                            "name": "EmailBody",
+                            "value": "@{outputs('Inject_footer_-_audit')}"
+                        },
+                        "runAfter": {
+                            "Inject_footer_-_audit": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "SetVariable"
+                    }
+                },
+                "else": {
+                    "actions": {
+                        "Compose_EmailBody_footer_-_monitor": {
+                            "inputs": "To resolve these, login to the Azure Portal and renew the reservation, or purchase new reservations.",
+                            "runAfter": {
+                                "Compose_EmailBody_subtitle_-_monitor": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Compose"
+                        },
+                        "Compose_EmailBody_subtitle_-_monitor": {
+                            "inputs": "Please note that the following Azure reservations for @{triggerBody()?['identifier']} will expire soon:",
+                            "runAfter": {
+                                "Compose_EmailBody_title_-_monitor": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Compose"
+                        },
+                        "Compose_EmailBody_title_-_monitor": {
+                            "inputs": "Expiring reservations for @{triggerBody()?['identifier']}",
+                            "runAfter": {},
+                            "type": "Compose"
+                        },
+                        "Inject_footer_-_monitor": {
+                            "inputs": "@replace(outputs('Inject_subtitle_-_monitor'), '@@Footer@@', outputs('Compose_EmailBody_footer_-_monitor'))",
+                            "runAfter": {
+                                "Inject_subtitle_-_monitor": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Compose"
+                        },
+                        "Inject_subtitle_-_monitor": {
+                            "inputs": "@replace(outputs('Inject_title_-_monitor'), '@@SubTitle@@', outputs('Compose_EmailBody_subtitle_-_monitor'))",
+                            "runAfter": {
+                                "Inject_title_-_monitor": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Compose"
+                        },
+                        "Inject_title_-_monitor": {
+                            "inputs": "@replace(variables('EmailBody'), '@@Title@@', outputs('Compose_EmailBody_title_-_monitor'))",
+                            "runAfter": {
+                                "Compose_EmailBody_footer_-_monitor": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Compose"
+                        },
+                        "Update_EmailBody_-_monitor": {
+                            "inputs": {
+                                "name": "EmailBody",
+                                "value": "@{outputs('Inject_footer_-_monitor')}"
+                            },
+                            "runAfter": {
+                                "Inject_footer_-_monitor": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "SetVariable"
+                        }
+                    }
+                },
+                "expression": {
+                    "and": [
+                        {
+                            "equals": [
+                                "@triggerBody()?['action']",
+                                "audit"
+                            ]
+                        }
+                    ]
+                },
+                "runAfter": {
+                    "Initialize_EmailResults_Boolean": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "If"
+            },
+            "Should_email_results": {
+                "actions": {
+                    "Send_an_email_(V2)": {
+                        "inputs": {
+                            "body": {
+                                "Body": "<p>@{variables('EmailBody')}</p>",
+                                "Importance": "Normal",
+                                "Subject": "Azure Reservations for @{triggerBody()?['identifier']}",
+                                "To": "@{triggerBody()?['emailResultsTo']}"
+                            },
+                            "host": {
+                                "connection": {
+                                    "name": "@parameters('$connections')['office365']['connectionId']"
+                                }
+                            },
+                            "method": "post",
+                            "path": "/v2/Mail"
+                        },
+                        "runAfter": {},
+                        "type": "ApiConnection"
+                    }
+                },
+                "else": {
+                    "actions": {
+                        "Nothing_to_send": {
+                            "inputs": {
+                                "runStatus": "Cancelled"
+                            },
+                            "runAfter": {},
+                            "type": "Terminate"
+                        }
+                    }
+                },
+                "expression": {
+                    "and": [
+                        {
+                            "equals": [
+                                "@variables('EmailResults')",
+                                "@true"
+                            ]
+                        }
+                    ]
+                },
+                "runAfter": {
+                    "Add_EmailBody_ReservationOrders": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "If"
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "parameters": {
+            "$connections": {
+                "defaultValue": {},
+                "type": "Object"
+            }
+        },
+        "triggers": {
+            "manual": {
+                "inputs": {
+                    "schema": {
+                        "properties": {
+                            "action": {
+                                "type": "string"
+                            },
+                            "activeOnly": {
+                                "type": "boolean"
+                            },
+                            "emailResultsTo": {
+                                "type": "string"
+                            },
+                            "identifier": {
+                                "type": "string"
+                            },
+                            "range1max": {
+                                "type": "integer"
+                            },
+                            "range1min": {
+                                "type": "integer"
+                            },
+                            "range2max": {
+                                "type": "integer"
+                            },
+                            "range2min": {
+                                "type": "integer"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "kind": "Http",
+                "type": "Request"
+            }
+        }
+    },
+    "parameters": {
+        "$connections": {
+            "value": {
+                "office365": {
+                    "connectionId": "/subscriptions/7fadb6ea-f460-4057-a8c4-84c7b61eb608/resourceGroups/admin_rg/providers/Microsoft.Web/connections/office365",
+                    "connectionName": "office365",
+                    "id": "/subscriptions/7fadb6ea-f460-4057-a8c4-84c7b61eb608/providers/Microsoft.Web/locations/uksouth/managedApis/office365"
+                }
+            }
+        }
+    }
+}
