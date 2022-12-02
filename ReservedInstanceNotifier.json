@@ -28,10 +28,23 @@
             },
             "Check_Action_parameter": {
                 "actions": {
+                    "Invalid_action_response": {
+                        "inputs": {
+                            "body": "Invalid action option specified",
+                            "statusCode": 400
+                        },
+                        "kind": "http",
+                        "runAfter": {
+                            "Invalid_action_specified": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "Response"
+                    },
                     "Invalid_action_specified": {
                         "inputs": {
                             "runError": {
-                                "message": "Invalid mode option specified"
+                                "message": "Invalid action option specified"
                             },
                             "runStatus": "Failed"
                         },
@@ -64,10 +77,23 @@
             },
             "Check_notification_range_parameters": {
                 "actions": {
+                    "Invalid_range_response": {
+                        "inputs": {
+                            "body": "One of the range values are invalid (only positive numbers are allowed)",
+                            "statusCode": 400
+                        },
+                        "kind": "http",
+                        "runAfter": {
+                            "Invalid_ranges_specified": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "Response"
+                    },
                     "Invalid_ranges_specified": {
                         "inputs": {
                             "runError": {
-                                "message": "One of the range values are invalid (only positive numbers are allowed)."
+                                "message": "One of the range values are invalid (only positive numbers are allowed)"
                             },
                             "runStatus": "Failed"
                         },
@@ -887,6 +913,19 @@
             },
             "Should_email_results": {
                 "actions": {
+                    "Respond_success": {
+                        "inputs": {
+                            "body": "Notifications succesfully generated.",
+                            "statusCode": 200
+                        },
+                        "kind": "http",
+                        "runAfter": {
+                            "Send_an_email_(V2)": [
+                                "Succeeded"
+                            ]
+                        },
+                        "type": "Response"
+                    },
                     "Send_an_email_(V2)": {
                         "inputs": {
                             "body": {
@@ -915,6 +954,19 @@
                             },
                             "runAfter": {},
                             "type": "Terminate"
+                        },
+                        "Respond_success,_no_results": {
+                            "inputs": {
+                                "body": "No reservations to report",
+                                "statusCode": 200
+                            },
+                            "kind": "http",
+                            "runAfter": {
+                                "Nothing_to_send": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Response"
                         }
                     }
                 },
