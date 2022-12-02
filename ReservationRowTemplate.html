@@ -1,0 +1,32 @@
+<tr
+  class="text-group"
+  style="padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;vertical-align: top;text-align: left">
+  <td
+    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, "Helvetica Neue", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>
+    @{body('Parse_Reservation')?['properties']?['reservedResourceType']}
+  </td>
+  <td
+    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, "Helvetica Neue", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>
+    @{body('Parse_reservation')?['sku']?['name']}
+  </td>
+  <td
+    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, "Helvetica Neue", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>
+    @{body('Parse_Reservation')?['properties']?['quantity']}
+  </td>
+  <td
+    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, "Helvetica Neue", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>
+    @{body('Parse_Reservation')?['properties']?['instanceFlexibility']}
+  </td>
+  <td
+    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, "Helvetica Neue", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>
+    @{body('Parse_Reservation')?['properties']?['renew']}
+  </td>
+  <td
+    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, "Helvetica Neue", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>
+    @{formatDateTime(body('Parse_Reservation')?['properties']?['expiryDate'], 'dd/MM/yyyy')}
+  </td>
+  <td
+    style='-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse;vertical-align: top;color: #11100f;font-family: Segoe UI, SegoeUI, Roboto, "Helvetica Neue", Arial, sans-serif;font-weight: 400;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;Margin: 0;text-align: left;font-size: 14px;line-height: 20px;max-width: 221px;width: 50%;border-bottom: solid 1px #dedede;word-wrap: break-word;padding: 5px;mso-padding-alt: 5px'>
+    @{if(equals(body('Parse_Reservation')?['properties']?['provisioningState'],'Cancelled'), body('Parse_Reservation')?['properties']?['extendedStatusInfo']?['statusCode'], 'Active')}
+  </td>
+</tr>
