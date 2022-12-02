@@ -33,12 +33,8 @@
                             "body": "Invalid action option specified",
                             "statusCode": 400
                         },
-                        "kind": "http",
-                        "runAfter": {
-                            "Invalid_action_specified": [
-                                "Succeeded"
-                            ]
-                        },
+                        "kind": "Http",
+                        "runAfter": {},
                         "type": "Response"
                     },
                     "Invalid_action_specified": {
@@ -48,7 +44,11 @@
                             },
                             "runStatus": "Failed"
                         },
-                        "runAfter": {},
+                        "runAfter": {
+                            "Invalid_action_response": [
+                                "Succeeded"
+                            ]
+                        },
                         "type": "Terminate"
                     }
                 },
@@ -82,12 +82,8 @@
                             "body": "One of the range values are invalid (only positive numbers are allowed)",
                             "statusCode": 400
                         },
-                        "kind": "http",
-                        "runAfter": {
-                            "Invalid_ranges_specified": [
-                                "Succeeded"
-                            ]
-                        },
+                        "kind": "Http",
+                        "runAfter": {},
                         "type": "Response"
                     },
                     "Invalid_ranges_specified": {
@@ -97,7 +93,11 @@
                             },
                             "runStatus": "Failed"
                         },
-                        "runAfter": {},
+                        "runAfter": {
+                            "Invalid_range_response": [
+                                "Succeeded"
+                            ]
+                        },
                         "type": "Terminate"
                     }
                 },
@@ -592,7 +592,7 @@
             "Get_Reservation_Orders": {
                 "inputs": {
                     "authentication": {
-                        "audience": "https://management.azure.com ",
+                        "audience": "https://management.azure.com",
                         "type": "ManagedServiceIdentity"
                     },
                     "method": "GET",
@@ -918,7 +918,7 @@
                             "body": "Notifications succesfully generated.",
                             "statusCode": 200
                         },
-                        "kind": "http",
+                        "kind": "Http",
                         "runAfter": {
                             "Send_an_email_(V2)": [
                                 "Succeeded"
@@ -952,7 +952,11 @@
                             "inputs": {
                                 "runStatus": "Cancelled"
                             },
-                            "runAfter": {},
+                            "runAfter": {
+                                "Respond_success,_no_results": [
+                                    "Succeeded"
+                                ]
+                            },
                             "type": "Terminate"
                         },
                         "Respond_success,_no_results": {
@@ -960,12 +964,8 @@
                                 "body": "No reservations to report",
                                 "statusCode": 200
                             },
-                            "kind": "http",
-                            "runAfter": {
-                                "Nothing_to_send": [
-                                    "Succeeded"
-                                ]
-                            },
+                            "kind": "Http",
+                            "runAfter": {},
                             "type": "Response"
                         }
                     }
