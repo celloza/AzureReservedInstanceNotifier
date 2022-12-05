@@ -3,8 +3,6 @@ A solution utilizing Logic Apps to create custom notifications about Azure Reser
 
 While it is not always possible to grant the requisite users the necessary access to Azure Portal, and since by default Azure Reservations notify a limited number of users regarding pending expirations, this solution was created in order to more granularly control when these notifications are sent, and to whom.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgrimstoner%2FAzureReservedInstanceNotifier%2Fmain%2Fazure_deploy.json)
-
 # Overview
 
 The solution consists of (fairly monolithic) LogicApp, which can be triggered through an HTTP request with a number of parameters.
@@ -14,6 +12,8 @@ The main LogicApp uses a [managed identity](https://learn.microsoft.com/en-us/az
 (for reference purposes, I was not able to use the Reservation Orders `GET` due to what I'm assuming was a bug, which [has now been fixed](https://stackoverflow.com/questions/73815802/azure-management-api-not-returning-reserved-instances))
 
 # Installation and configuration
+
+## Manually
 
 1. Deploy a LogicApp, and [assign it a System-Assigned Managed Identity](https://learn.microsoft.com/en-us/azure/logic-apps/create-managed-service-identity?tabs=consumption).
 2. Next you have to grant this MI the requisite rights to view information for reservations. This can be done through Role Assignment in the Reservations blade:
@@ -29,6 +29,11 @@ Note that you will only be able to assign this Role if your account [has been el
 3. Copy the code from the JSON file into the code-view, and configure the Send Email task to use your credentials.
 
 After this, you can invoke the LogicApp manually, or via a separate LogicApp to trigger it based on a Recurrence trigger.
+
+## With a template
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgrimstoner%2FAzureReservedInstanceNotifier%2Fmain%2Fazure_deploy.json)
+
+This template deploys the main LogicApp, a LogicApp that triggers it based on a pre-defined schedule, the required API Connection for sending emails through Office365, and the role assignment for the MI (role assignment is failing, as per [this](https://stackoverflow.com/questions/74690173/how-do-you-assign-reservations-reader-or-reservations-administrator-in-an-ar)).
 
 # Parameters
 
