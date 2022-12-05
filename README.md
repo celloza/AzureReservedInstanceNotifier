@@ -92,3 +92,7 @@ The `audit` and `monitor` modes result in fairly similar emails. The emails (of 
 Sample `audit` email:
 
 ![image](https://user-images.githubusercontent.com/3426823/205324663-e8a8c3fa-a014-4dd4-97d4-611be7e8ff3b.png)
+
+# Update 05/12/2022
+
+Added an ARM template to deploy the solution. Note that the automatic assigning of the Reservations Reader role is still not functioning, and is the topic of an open StackExchange question here: https://stackoverflow.com/questions/74690173/how-do-you-assign-reservations-reader-or-reservations-administrator-in-an-ar
