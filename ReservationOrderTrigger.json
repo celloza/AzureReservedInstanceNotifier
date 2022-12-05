@@ -1,0 +1,67 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "ReservedInstanceNotifier": {
+                "inputs": {
+                    "body": {
+                        "action": "monitor",
+                        "emailResultsTo": "list-of-email-addresses",
+                        "identifier": "company-name",
+                        "range1max": 37,
+                        "range1min": 30,
+                        "range2max": 67,
+                        "range2min": 60
+                    },
+                    "host": {
+                        "triggerName": "manual",
+                        "workflow": {
+                            "id": "/subscriptions/7fadb6ea-f460-4057-a8c4-84c7b61eb608/resourceGroups/admin_rg/providers/Microsoft.Logic/workflows/ReservedInstanceNotifier"
+                        }
+                    }
+                },
+                "runAfter": {},
+                "type": "Workflow"
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "parameters": {},
+        "triggers": {
+            "Recurrence": {
+                "evaluatedRecurrence": {
+                    "frequency": "Week",
+                    "interval": 1,
+                    "schedule": {
+                        "hours": [
+                            "9"
+                        ],
+                        "minutes": [
+                            0
+                        ],
+                        "weekDays": [
+                            "Monday"
+                        ]
+                    }
+                },
+                "recurrence": {
+                    "frequency": "Week",
+                    "interval": 1,
+                    "schedule": {
+                        "hours": [
+                            "9"
+                        ],
+                        "minutes": [
+                            0
+                        ],
+                        "weekDays": [
+                            "Monday"
+                        ]
+                    }
+                },
+                "type": "Recurrence"
+            }
+        }
+    },
+    "parameters": {}
+}

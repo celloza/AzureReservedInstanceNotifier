@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "logicAppName": {
+            "value": "ReservedInstanceNotifier"
+        },
+        "triggerLogicAppName": {
+            "value": "ReservedInstanceNotifier-Trigger"
+        },
+        "o365ConnectionName": {
+            "value": "ReservedInstanceNotifierO365Conn"
+        },
+        "logicAppLocation": {
+            "value": "uksouth"
+        },
+        "emailResultsTo": {
+            "value": "list of semi-colon separated email addresses"
+        },
+        "contextIdentifier": {
+            "value": "some company/subscription identifier"
+        },
+        "createdTagContents": {
+            "value": "Created tag contents set on LogicApps"
+        },
+        "creatorTagContents": {
+            "value": "Created By tag contents set on LogicApps"
+        }
+    }
+}
