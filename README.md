@@ -3,6 +3,8 @@ A solution utilizing Logic Apps to create custom notifications about Azure Reser
 
 While it is not always possible to grant the requisite users the necessary access to Azure Portal, and since by default Azure Reservations notify a limited number of users regarding pending expirations, this solution was created in order to more granularly control when these notifications are sent, and to whom.
 
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgrimstoner%2FAzureReservedInstanceNotifier%2Fmain%2Fazure_deploy.json)
+
 # Overview
 
 The solution consists of (fairly monolithic) LogicApp, which can be triggered through an HTTP request with a number of parameters.
